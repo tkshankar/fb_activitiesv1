@@ -84,7 +84,7 @@ class PageactivitiesController extends ActivitiesBase
 	public function actionExptLikes($page_id)
 	{
 		$LikeObj = Like::model()->findAllLikes($page_id);
-		$fileName="Likes_".$page_idfileName;			
+		$fileName="Likes_".$page_id.".csv";				
 		$data=array();
 		foreach ($LikeObj as $dataval) { 
 		$data[] = $dataval->attributes;
