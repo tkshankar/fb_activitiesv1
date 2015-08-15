@@ -2,8 +2,7 @@
  <tr class="hght"><td class="error">
 
 <?php
-//print_r($errordisp);
-echo "Error Code : ".$errordisp['code']."<br/>Error Type :".$errordisp['type']."<br/>Error : ".$errordisp['message'];
+echo $message;
 ?>
 </td></tr>
 
